@@ -1,9 +1,11 @@
 // binary exponentiation algorithm when exponent is non-negative,
 // unsigned long int can handle ~ 2^64
-unsigned long int be(int b, int e)
+// signed long int can handle ~ -2^31 to +2^31
+
+signed long int be(int b, int e)
 {
 
-    unsigned long int result = 1;
+    signed long int result = 1;
     if (b == 0 && e == 0)
     {
         throw "Math Error!";

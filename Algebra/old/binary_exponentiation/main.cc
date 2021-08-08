@@ -1,9 +1,10 @@
 #include <iostream>
 using namespace std;
-unsigned long int be(int b, int e);
+signed long int be(int b, int e);
 
 int main()
 {
+
 
     int base;
     int exponent;
@@ -15,7 +16,7 @@ int main()
     cin >> exponent;
 
     cout << "Expression is: " << base << "^" << exponent << "\n";
-    unsigned long int re = be(base, exponent);
+    signed long int re = be(base, exponent);
     cout << "Answer:" << re << "\n";
     }
 
