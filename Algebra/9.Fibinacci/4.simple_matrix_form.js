@@ -1,3 +1,5 @@
+// below code can calculates nth fibonacci upto n = 1476
+
 // Below code uses the matrix form whose determinant results in Cassini's Identity
 // https://en.wikipedia.org/wiki/Fibonacci_number#matrix-form
 
@@ -75,4 +77,7 @@ const generate_2d_array = (n, m, initializer = 0) => {
   return two_d_arr
 }
 
-console.log(find_nth_fib(5))
+var start = Date.now()
+console.log(find_nth_fib(1476))
+
+console.log(Date.now()-start)
