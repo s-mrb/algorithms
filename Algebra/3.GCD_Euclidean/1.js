@@ -21,4 +21,4 @@ const gcd = (a, b) => {
   return a
 }
 
-console.log(gcd(123432,567892))
+console.log(gcd(100000007,3))

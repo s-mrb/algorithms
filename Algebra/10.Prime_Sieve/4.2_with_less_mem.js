@@ -1,0 +1,1 @@
+// make use of bitmap rather than array

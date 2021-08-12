@@ -1,3 +1,4 @@
+// For a much better version view 2.js
 // This Code doesn't handle negative exponents
 // This Code doesn't handle fractional exponents
 
@@ -27,7 +28,13 @@ const binary_expo = (base, exponent) => {
     throw Error("Math Error")
   }
 
-  if (exponent==0){
+  if (exponent==0 || base==1){
+    return 1
+  }
+  if(base == -1 ){
+    if(exponent & 1){
+      return -1
+    }
     return 1
   }
 
