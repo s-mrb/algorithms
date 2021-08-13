@@ -21,7 +21,7 @@ works with negative numbers and take care of constraints
 DOESN'T WORK WITH FRACTIONAL EXPONENT
 */
 
-const myPow = (
+const pow_mod = (
   base,
   exp,
   el = Number.MIN_SAFE_INTEGER,
@@ -85,7 +85,7 @@ const myPow = (
 }
 
 console.log(
-  myPow(
+  pow_mod(
     (base = 65),
     (exp = 12345678),
     (el = -2147483648),
