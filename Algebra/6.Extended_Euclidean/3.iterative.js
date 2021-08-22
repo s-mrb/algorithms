@@ -1,4 +1,4 @@
-// Iterative Method of EGCD
+// Not Extended Euclidean as per se but do the same work
 // Only Method used here
 // O(log N), but faster then it's recursive variant
 

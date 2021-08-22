@@ -1,0 +1,1 @@
+// https://cp-algorithms.web.app/algebra/factorial-modulo.html

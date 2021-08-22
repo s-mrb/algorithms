@@ -15,9 +15,6 @@ algorithm quickly terminates if
     given exponent is lower or bigger than exponent constraint (el,em)
     result achieved so far is either equal to or lower or max than result constraint (rl,rm)
 
-
-
-
 */
 
 const myPow = (

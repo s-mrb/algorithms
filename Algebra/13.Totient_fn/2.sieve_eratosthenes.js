@@ -1,4 +1,8 @@
 /*
+verify at https://primefan.tripod.com/Phi500.html
+*/
+
+/*
 totient function from 1 to n
 */
 
@@ -23,4 +27,4 @@ const sieve = (n) => {
   return phi
 }
 
-console.log(sieve(10))
+console.log(sieve(89)[89])

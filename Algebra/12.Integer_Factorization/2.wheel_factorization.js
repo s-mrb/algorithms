@@ -35,4 +35,4 @@ const prime_factorization = (n) => {
   return factors
 }
 
-console.log(prime_factorization(8))
+console.log(prime_factorization(60))

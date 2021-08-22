@@ -1,0 +1,14 @@
+
+
+
+9 - n! % p using simple fast sieve
+11 - n! % p Using Wilson's Method
+
+
+
+13 - Discrete Logarithm without Binary Exponentiation
+14 - Discrete Logarithm when a and b are not coprimes
+15 - Primitive Root Trial Loop
+16 - Primitive Root Using Eulers Totient Function
+17 - Discrete Root
+18 - Montgomery Mul

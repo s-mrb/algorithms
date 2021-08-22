@@ -46,6 +46,8 @@ if (0 & 1) {
 
 ### Modulo
 
+### Distributive
+
 ### Modulo 0
 
 ```js

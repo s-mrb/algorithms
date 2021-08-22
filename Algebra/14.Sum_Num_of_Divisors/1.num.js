@@ -1,3 +1,5 @@
+// NUMBER OF TOTAL DIVISORS OF A NUM
+
 // Tested via http://www.javascripter.net/math/calculators/divisorscalculator.htm
 
 /*
@@ -50,4 +52,4 @@ const prime_factorization = (n) => {
   return num_divisors
 }
 
-console.log(prime_factorization(1123445566))
+console.log(prime_factorization(10))
