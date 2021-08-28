@@ -12,3 +12,13 @@
 16 - Primitive Root Using Eulers Totient Function
 17 - Discrete Root
 18 - Montgomery Mul
+
+
+
+Binary GCD
+GCD of array
+All solutions of linear diaphantine
+Probable Prime
+Deterministic Prime
+Pollards p-1 factorization
+Totient to ahead, do implement again for practice

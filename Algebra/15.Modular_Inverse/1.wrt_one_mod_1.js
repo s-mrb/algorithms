@@ -51,7 +51,7 @@ const mod_inv = (coef, mod,remainder) => {
   var [x, y] = find_diaphantine_coeff(a, b)
   x = (x / g) * c
   if (x < 0) {
-    x = x + init_b
+    x = x + mod
   }
   return x
 }

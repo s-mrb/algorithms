@@ -1,62 +1,41 @@
+/*
+Base and Mode must be co-prime for below code to work properly
+*/
+
 const disc_log = (base, mod, remainder) => {
-    let n = parseInt(Math.sqrt(mod) + 1)
-    let pows = {}
-    let key, desired_p, desired_q
-    for (let p = 1; p <= n; p++) {
-      pows[pow_mod(base, n * p, mod)] = p
-    }
-  
-    for (let q = 0; q <= n; q++) {
-      key = remainder * pow_mod(base, q, mod)
-  
-      if (key in pows) {
-        desired_p = pows[key]
-        desired_q = q
-        return n * desired_p - desired_q
-      }
-    }
-  
-    return -1
+  let n = parseInt(Math.sqrt(mod) + 1)
+  let pows = {}
+  let key, desired_p, desired_q
+  let anp = 1
+  let res = 1
+
+  // find a^n
+  for (let i = 0; i < n; i++) {
+    anp = (((anp % mod) * base) % mod) % mod
   }
-  
-  const pow_mod = (base, exp, n) => {
-    if (n == 0) {
-      return 'Undefined'
-    }
-  
-    let res = -2
-  
-    res = base == 1 || exp == 0 ? 1 : base == -1 ? (exp & 1 ? -1 : 1) : res
-  
-    if (res != -2) {
-      return res % n
-    }
-  
-    res = 1
-  
-    let is_neg
-    if (exp < 0) {
-      is_neg = 1
-      exp = -exp
-    }
-  
-    base %= n
-    while (exp != 0) {
-      if (exp & 1) {
-        res = ((res % n) * (base % n)) % n
-      }
-      exp >>= 1
-      base = ((base % n) * (base % n)) % n
-    }
-  
-    if (is_neg) {
-      return 1 / res
-    }
-  
-    return res
+  console.log(anp, n)
+  res = anp
+  for (let p = 1; p <= n; p++) {
+    res = (res * anp) % mod
+    pows[anp] = p
   }
-  
-  // console.log(disc_log(2, 5, 3))
-  console.log(disc_log(3, 11, 7))
-  
-  
+
+  let b = base
+  res = 1
+  key = remainder * res
+  for (let q = 0; q <= n; q++) {
+    if (key in pows) {
+      desired_p = pows[key]
+      desired_q = q
+      return n * desired_p - desired_q
+    }
+    res = (res * b) % mod
+    key = remainder * res
+  }
+
+  return -1
+}
+
+console.log(disc_log(3, 11, 7))
+
+// console.log(disc_log(2, 9, 7))

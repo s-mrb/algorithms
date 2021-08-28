@@ -15,7 +15,7 @@ const eea = (a, b) => {
   let t2 = 1
   let q = 0
 
-  while (r1) {
+  while (r2) {
     q = Math.floor(r1 / r2)
     ;[r1, r2] = [r2, r1 - q * r2]
     ;[s1, s2] = [s2, s1 - q * s2]
