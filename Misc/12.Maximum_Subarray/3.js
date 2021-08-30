@@ -2,6 +2,8 @@
 Algo:
 
 Kadane Algo
+
+NEXT: Reduce this algo in 3 line of code
 */
 
 /*
@@ -22,6 +24,7 @@ const maxSubArray = (nums) => {
   }
   return global_max
 }
+
 
 
 // let nums = [-1, 2, 1, -9]

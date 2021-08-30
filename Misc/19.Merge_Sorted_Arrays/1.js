@@ -10,7 +10,7 @@ To accommodate this, nums1 has a length of m + n, where the first m elements den
 /*
 Algo:
 
-STUPID ONE, SEE 4.js for good algo
+STUPID ONE, SEE 4.js and 2.js for good algo
 if n == 0 return nums1
 let tail = m
 
